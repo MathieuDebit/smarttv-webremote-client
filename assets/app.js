@@ -7,3 +7,9 @@ keys.map(function(key){
   button.setAttribute('onclick', 'send(\''+ key +'\')');
   container.appendChild(button);
 });
+
+var socket = io.connect('http://localhost:8080');
+
+socket.on('welcome', function(message){
+  console.log(message);
+});
