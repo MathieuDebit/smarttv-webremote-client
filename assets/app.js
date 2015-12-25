@@ -44,3 +44,13 @@ var send = function(key){
 socket.on('key', function(msg){
   console.log(msg);
 });
+
+var ping = document.getElementById('ping');
+ping.addEventListener('click', function(){
+  socket.emit('ping');
+  console.log('ping sent...');
+});
+
+socket.on('ping', function(message){
+  console.log(message);
+});
