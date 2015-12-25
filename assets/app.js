@@ -24,3 +24,14 @@ ipSubmit.addEventListener('click',function(){
 socket.on('ip', function(message){
   console.log(message);
 });
+
+var nameSubmit = document.getElementById('nameSubmit');
+var remoteName = document.getElementById('remoteName');
+
+nameSubmit.addEventListener('click',function(){
+  socket.emit('name', remoteName.value);
+});
+
+socket.on('name', function(message){
+  console.log(message);
+});
