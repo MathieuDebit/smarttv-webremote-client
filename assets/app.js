@@ -35,3 +35,12 @@ nameSubmit.addEventListener('click',function(){
 socket.on('name', function(message){
   console.log(message);
 });
+
+var send = function(key){
+  socket.emit('key', key);
+  console.log('key pressed : ' + key);
+};
+
+socket.on('key', function(msg){
+  console.log(msg);
+});
