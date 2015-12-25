@@ -13,3 +13,14 @@ var socket = io.connect('http://localhost:8080');
 socket.on('welcome', function(message){
   console.log(message);
 });
+
+var ipSubmit = document.getElementById('ipSubmit');
+var ip = document.getElementById('ip');
+
+ipSubmit.addEventListener('click',function(){
+  socket.emit('ip', ip.value);
+});
+
+socket.on('ip', function(message){
+  console.log(message);
+});
