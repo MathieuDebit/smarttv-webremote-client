@@ -32,3 +32,92 @@ table {
 
 * {
   box-sizing: border-box; }
+
+body {
+  background: #272A2C;
+  margin: 0;
+  padding: 20px; }
+
+#container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+input {
+  height: 35px;
+  width: 100%;
+  border: none;
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+form {
+  width: 100%;
+  padding-bottom: 15px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid #3A3E41;
+  margin-bottom: 20px; }
+
+  form span {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 5px 0; }
+
+    form span input {
+      border: 1px solid #B7B7B7;
+      background-color: transparent;
+      color: #CBCBCB; }
+      form span input:focus {
+        outline: none;
+        border-color: #2cabf2; }
+        form span input:focus + input:last-child {
+          background: #2cabf2;
+          border-color: #2cabf2;
+          color: #ebebeb; }
+      form span input:first-child {
+        padding: 0 10px; }
+      form span input:last-child {
+        width: 20%;
+        margin-left: -1px; }
+
+button, #ping {
+  box-shadow: inset 0px 1px 0px 0px #5cbef5;
+  background: -webkit-linear-gradient(top, #2cabf2 5%, #0e93dd 100%);
+  background: linear-gradient(to bottom, #2cabf2 5%, #0e93dd 100%);
+  background-color: #2cabf2;
+  border: 1px solid #0c83c5;
+  display: inline-block;
+  cursor: pointer;
+  color: #ebebeb;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #0c83c5;
+  width: 48%;
+  height: 35px;
+  margin: calc(2% / 2) 0;
+  text-align: center;
+  overflow: hidden; }
+
+
+#ping {
+  margin: 5px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px; }
