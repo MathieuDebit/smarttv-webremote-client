@@ -72,14 +72,26 @@ form {
           flex-direction: column;
   border-bottom: 1px solid #3A3E41;
   margin-bottom: 20px; }
-
+  @media (min-width: 1025px) {
+    form {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
   form span {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     margin: 5px 0; }
-
+    @media (min-width: 1025px) {
+      form span {
+        width: 32%; } }
     form span input {
       border: 1px solid #B7B7B7;
       background-color: transparent;
@@ -113,7 +125,18 @@ button, #ping {
   margin: calc(2% / 2) 0;
   text-align: center;
   overflow: hidden; }
-
+  @media (min-width: 768px) {
+    button, #ping {
+      width: 30%;
+      margin: calc(3.33% / 2) 0; } }
+  @media (min-width: 1025px) {
+    button, #ping {
+      width: 18%;
+      margin: calc(2% / 2) 0; }
+      button:hover, #ping:hover {
+        background: -webkit-linear-gradient(top, #2cabf2 5%, #14a1f1 100%);
+        background: linear-gradient(to bottom, #2cabf2 5%, #14a1f1 100%);
+        border: 1px solid #0e93dd; } }
 
 #ping {
   margin: 5px 0;
@@ -121,3 +144,6 @@ button, #ping {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px; }
+  @media (min-width: 1025px) {
+    #ping {
+      width: 32%; } }
