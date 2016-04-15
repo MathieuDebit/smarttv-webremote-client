@@ -18,7 +18,8 @@ open index.html
 
 That's it for the client!
 
-![smarttv-webremote-client interface](http://i.imgur.com/ltkDR9b.jpg)
+![smarttv-webremote-client interface](http://i.imgur.com/SDWR78d.png)
+> Design by [Valentin Galmand](https://twitter.com/vgalmand)
 
 
 ## Usage
